@@ -1,0 +1,109 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 13/03/2020 às 03:33
+-- Versão do servidor: 10.4.11-MariaDB
+-- Versão do PHP: 7.4.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Banco de dados: `escola`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `aluno`
+--
+
+CREATE TABLE `aluno` (
+  `nome` varchar(255) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `direcao`
+--
+
+CREATE TABLE `direcao` (
+  `nome` varchar(255) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `senha` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `disciplina`
+--
+
+CREATE TABLE `disciplina` (
+  `nome` varchar(255) NOT NULL,
+  `data` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `docente`
+--
+
+CREATE TABLE `docente` (
+  `nome` varchar(255) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `turma`
+--
+
+CREATE TABLE `turma` (
+  `nome` varchar(255) NOT NULL,
+  `ano` int(1) NOT NULL,
+  `data` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Índices de tabelas apagadas
+--
+
+--
+-- Índices de tabela `aluno`
+--
+ALTER TABLE `aluno`
+  ADD PRIMARY KEY (`nome`);
+
+--
+-- Índices de tabela `direcao`
+--
+ALTER TABLE `direcao`
+  ADD PRIMARY KEY (`nome`);
+
+--
+-- Índices de tabela `disciplina`
+--
+ALTER TABLE `disciplina`
+  ADD PRIMARY KEY (`nome`);
+
+--
+-- Índices de tabela `turma`
+--
+ALTER TABLE `turma`
+  ADD PRIMARY KEY (`nome`);
+COMMIT;
