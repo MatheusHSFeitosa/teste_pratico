@@ -1,4 +1,4 @@
-# teste_pratico
+# Sitema de controle escolar
 
 Executar projeto
 
