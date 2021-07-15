@@ -1,5 +1,12 @@
 # Sitema de controle escolar
 
+Consiste em um sistema para ser usado em uma escola com o o bjetivo de controlar notas e frequencia de alunos e professores.
+
+
+Obs.: Porjeto foi realizado durante um processo seletivo.
+
+
+
 Executar projeto
 
 
